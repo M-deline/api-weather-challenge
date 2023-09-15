@@ -1,12 +1,97 @@
-<!-- https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key} -->
-<!-- Using the 5 Day Weather Forecast API, you'll notice that you will need to pass in coordinates instead of just a city name. Using the OpenWeatherMap APIs, how could we retrieve geographical coordinates given a city name? -->
-<!-- You will use localStorage to store any persistent data. For more information on how to work with the OpenWeather API, refer to the Full-Stack Blog on how to use API keysLinks to an external site.. -->
-<!-- GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://openweathermap.org/ -->
+<!-- <link rel="stylesheet" href="https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={b29665cab83b1b3f257a7c47b10f4e77}"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="index.css" />
+<title>Weather API</title>
+
+<body>
+    <div class="container" style="border:2px solid red">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="navbar pb-0 px-0">Weather Forecast</h1>
+            </div>
+        </div>
+        <div class="row content-row" style="border:2px solid green">
+            <div class="col-3 col-md">
+                <h2>Search for your city!</h2>
+                <form>
+                    <div class="form-group input-group">
+                        <input type="text" class="form" id="search-form" placeholder="Enter city here">
+                        <div class="input-group-append">
+                            <button class="btn-go" type="button" id="search-button">Go
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <!-- search history -->
+                <!-- <div class="card">
+                    <ul class="list-group" id="search-history">
+                        <li class="list-group-item btn" data-value=""></li>
+                    </ul>
+                </div> -->
+            </div>
+            <!-- containers for each item required -->
+            <div id="weather" class="col-8">
+                <h1 id="city-name"></h1>
+                <div id="date" class="row">
+                    <h2>Date:</h2>
+                    <p></p>
+                </div>
+                <div id="temp" class="row">
+                    <h2>Temperature</h2>
+                    <p></p>
+                </div>
+                <div id="wind" class="row">
+                    <h2>Wind</h2>
+                    <p>This is the content of container 2.</p>
+                </div>
+                <div id="humidity" class="row">
+                    <h2>Humidity</h2>
+                    <p>This is the content of container 3.</p>
+                </div>
+                <div id="icon" class="row">
+                    <h2>Conditions</h2>
+                    <p>This is the content of container 3.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="fiveday-forecast" class="container">
+            <div id="forecast" class="container">
+                <h2>5 Day Forecast</h2>
+            </div>
+
+            <div id="first" class="container">
+                <h2>Day 1</h2>
+                <p>This is the content of container 3.</p>
+            </div>
+
+            <div id="second" class="container">
+                <h2>Day 2</h2>
+                <p>This is the content of container 3.</p>
+            </div>
+
+            <div id="third" class="container">
+                <h2>Day 3</h2>
+                <p>This is the content of container 3.</p>
+            </div>
+
+            <div id="four" class="container">
+                <h2>Day 4</h2>
+                <p>This is the content of container 3.</p>
+            </div>
+
+            <div id="five" class="container">
+                <h2>Day 5</h2>
+                <p>This is the content of container 3.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.9/dayjs.min.js" integrity="sha512-q4Xn+ZU2K+dqJPL8a3TiyGsDa31IkR/rLt/w+fy8jLrx8TdXj0dLM1Aq4aPXnOOKxHEya/bD9DePDB2DHm4jJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

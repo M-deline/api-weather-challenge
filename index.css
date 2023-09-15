@@ -1,0 +1,20 @@
+* {
+    background-color: white;
+    font-family:monospace;
+    font-size: medium;
+}
+
+.btn-go:hover {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+   box-shadow: 0 4px 15px 0 #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000;
+    
+}
+
+h2 {
+    font-size: medium;
+}
+
+div {
+    font-size: medium;
+}
