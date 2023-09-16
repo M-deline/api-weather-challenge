@@ -14,3 +14,4 @@
 ## Contributions
 - I would like to give a huge thank you and shout out to Corey Yates. She is a tutor from BCS and she helped me a ton during ths challenge. She helped me format my JavaScript correctly to make sure that the API was correctly written. She helped me with using json response as well and making sure that the lat and lon parameters and data was correct in order for the website to display properly. 
 - I would also like to give thanks to another BCS student support tutor, Yanga who helped me to get the data from the API to show up in the HTML. I was stuck on how to get the data from the console log from .main into my JavaScript and HTML and Yanga walked me through the steps on how to get there. 
+// thopstadredner a million thanks to them
