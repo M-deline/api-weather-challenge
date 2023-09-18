@@ -16,7 +16,7 @@
         <div class="row content-row" style="border:2px solid">
             <div class="col-3 col-md">
                 <h2>Search for your city!</h2>
-                <form>
+                <form id="search-history">
                     <div class="form-group input-group">
                         <input type="text" class="form" id="search-form" placeholder="Enter city here">
                         <div class="input-group-append">
@@ -25,14 +25,11 @@
                             </button>
                         </div>
                     </div>
+                    <h5>Recently Viewed:</h5>
+                            <ul id="history"></ul>
                 </form>
-                <!-- search history -->
-                <!-- <div class="card">
-                    <ul class="list-group" id="search-history">
-                        <li class="list-group-item btn" data-value=""></li>
-                    </ul>
-                </div> -->
             </div>
+            <div id="data-container"></div>
             <!-- containers for each item required -->
             <div id="weather" class="col-8">
                 <h1 id="city-name"></h1>
@@ -49,37 +46,6 @@
                     <h2></h2>
                     <p></p>
                 </div>
-            </div>
-        </div>
-
-        <div id="fiveday-forecast" class="container">
-            <div id="forecast" class="container">
-                <h2>5 Day Forecast</h2>
-            </div>
-
-            <div id="first" class="container">
-                <h2>Day 1</h2>
-                <p>This is the content of container 3.</p>
-            </div>
-
-            <div id="second" class="container">
-                <h2>Day 2</h2>
-                <p>This is the content of container 3.</p>
-            </div>
-
-            <div id="third" class="container">
-                <h2>Day 3</h2>
-                <p>This is the content of container 3.</p>
-            </div>
-
-            <div id="four" class="container">
-                <h2>Day 4</h2>
-                <p>This is the content of container 3.</p>
-            </div>
-
-            <div id="five" class="container">
-                <h2>Day 5</h2>
-                <p>This is the content of container 3.</p>
             </div>
         </div>
     </div>
