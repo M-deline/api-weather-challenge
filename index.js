@@ -1,4 +1,3 @@
-//https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
 const searchButton = document.querySelector('#search-button');
 var apiKey = "cdfc743396b214e68c6bc948dddc6bfc";
 var history = []
@@ -7,9 +6,6 @@ var history = []
 var documentForm = function (event) {
   event.preventDefault();
 }
-
-// var recentSearches = JSON.parse(localStorage.getItem("searches"));
-// var searchHistory = document.getElementById("history");
 
 function displayData(data) {
   const dataContainer = document.getElementById('data-container');
@@ -84,28 +80,4 @@ searchButton.addEventListener('click', function () {
   getGeo(cityName)
 })
 
-
-// var searchHistory = document.getElementById("search-history");
-// var city = document.getElementById("city-name");
-// searchHistory.addEventListener("click", function (event) {
-//   event.preventDefault();
-//   var searchCity = city.value
-//   // Adds searched city to local storage
-//   submitSearch(searchCity);
-//   addRecentSearch(searchCity);
-// });
-// function addRecentSearch(city) {
-//   var recentButton = document.createElement("button");
-//   recentButton.textContent = city;
-//   recentButton.addEventListener("click", function () {
-//     submitSearch(city);
-//   });
-//   searchHistory.appendChild(recentButton);
-// }
-// function submitSearch(searchCity) {
-//   recentSearches.push(searchCity);
-//   console.log(recentSearches)
-//   localStorage.setItem("searches", JSON.stringify(recentSearches));
-//   getCurrentWeather(searchCity);
-// }
 
