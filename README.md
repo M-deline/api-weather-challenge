@@ -5,6 +5,8 @@
 
 ## Screenshot and Deployed website
 - Here is the link to the deployed website. 
+<img width="1280" alt="Screenshot 2023-09-17 at 6 14 01 PM" src="https://github.com/M-deline/api-weather-challenge/assets/134882025/da7ec5ad-7886-4a7a-80a7-3b792aabfd29">
+
 
 ## Takeaways
 - This challenge was a fun way to learn about APIs. One thing in particular is that there is a lot of information online This is because there are different ways to format the JavaScript and there are different libraries as well (JQuery vs no JQuery). This was confusing at times since I would accidentally mix the two and then get an error. 
